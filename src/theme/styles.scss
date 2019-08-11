@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: $oswald-font-name;
+    color: $gray-dark-color;
+    background-color: $gray-light-color;
+    font-size: $base-font-size;
+    min-width: $min-page-width;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a, input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: $blue-color;
+	display: inline-block;
+	cursor: pointer;
+}
+
+input {
+    border: none;
+}

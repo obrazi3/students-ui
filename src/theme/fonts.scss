@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: $oswald-font-name;
+    src: local('../assets/fonts/regular-fonts'), url('../assets/fonts/regular-fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $oswald-font-name;
+    src: local('../assets/fonts/regular-fonts'), url('../assets/fonts/regular-fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

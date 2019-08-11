@@ -1,0 +1,22 @@
+@import '../../theme/variables.scss';
+
+header {
+	display: flex;
+	background-color: $gray-dark-color;
+
+	.dashboard {
+		height: $normal-header-height;
+		user-select: none;
+
+		.dashboard-title {
+			letter-spacing: 0.4px;
+			line-height: $normal-header-height;
+			padding: 0 20px;
+			color: $white-color;
+		}
+
+		&:hover {
+			background-color: $gray-dark-color-hover;
+		}
+	}
+}
