@@ -11,3 +11,16 @@ $normal-header-height: 60px;
 // fonts
 $oswald-font-name: 'Oswald';
 $source-sans-pro-font-name: 'SourceSansPro';
+
+@mixin full-page-image($image) {
+    position: fixed;
+    top: $normal-header-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url($image);
+    background-size: cover;
+}

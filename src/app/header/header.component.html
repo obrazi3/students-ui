@@ -1,5 +1,11 @@
 <header>
-	<a *ngFor="let dashboard of navDashboards" class="dashboard" (click)="onDashboardClick(dashboard.entityType)">
+	<a
+		*ngFor="let dashboard of navDashboards"
+		class="dashboard"
+		[routerLink]="[dashboard.route]"
+		[routerLinkActive]="['active']"
+		(click)="onDashboardClick(dashboard.entityType)"
+	>
 		<span class="dashboard-title">{{ dashboard.title }}</span>
 	</a>
 </header>

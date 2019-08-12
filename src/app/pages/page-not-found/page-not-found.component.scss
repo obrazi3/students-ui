@@ -1,0 +1,25 @@
+@import '../../../theme/variables.scss';
+
+.not-found-page {
+    @include full-page-image('../../../assets/img/page-not-found.png');
+
+    text-align: center;
+    user-select: none;
+
+    .status,
+    .message {
+        color: $gray-dark-color;
+        font-family: $oswald-font-name;
+    }
+
+    .status {
+        font-size: 100px;
+        margin-bottom: -19px;
+    }
+
+    .message {
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}

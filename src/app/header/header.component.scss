@@ -18,5 +18,18 @@ header {
 		&:hover {
 			background-color: $gray-dark-color-hover;
 		}
+
+		&.active {
+			background-color: $gray-dark-color-hover;
+			border-bottom: solid px-to-rem(3px) $blue-color;
+
+			.dashboard-title {
+				color: $blue-color;
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
 	}
 }
