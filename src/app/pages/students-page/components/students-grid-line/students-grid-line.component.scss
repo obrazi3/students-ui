@@ -1,0 +1,8 @@
+@import '../../../../../theme/variables.scss';
+
+:host {
+	display: flex;
+	height: $grid-cell-height;
+	width: 100%;
+	border-bottom: 1px solid $grid-border-color;
+}
