@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { PageNotFoundComponent } from './page-not-found';
+import { PageNotFoundModule } from './page-not-found/page-not-found.module';
+import { StudentsPageModule } from './students-page/students-page.module';
 
 @NgModule({
-	imports: [],
-	declarations: [PageNotFoundComponent],
-	exports: [PageNotFoundComponent],
+	imports: [PageNotFoundModule, StudentsPageModule],
+	declarations: [],
+	exports: [],
 })
 export class PagesModule {}
