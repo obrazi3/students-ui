@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 
+import { MOCK_STUDENTS } from '../../mock-data/students';
+
 @Component({
 	selector: 'app-students-page',
 	templateUrl: './students-page.component.html',
-	styleUrls: ['./students-page.component.scss'],
 })
-export class StudentsPageComponent {}
+export class StudentsPageComponent {
+	public students = MOCK_STUDENTS;
+}
